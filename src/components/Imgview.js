@@ -7,6 +7,8 @@ import {
   ScrollView,
 } from 'react-native';
 
+import styles from '../styles/Imgview.styles'
+
 class Imgview extends Component {
   constructor(props) {
     super(props);
@@ -30,16 +32,3 @@ class Imgview extends Component {
 
 export default Imgview;
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    marginTop: 100,
-  },
-  userImage: {
-    height: 500,
-    width: 500,
-    alignSelf: 'center',
-    borderColor: '#DCDCDC',
-    borderWidth: 3,
-  },
-});

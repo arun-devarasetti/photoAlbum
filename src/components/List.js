@@ -5,13 +5,11 @@ import {
   View,
   TouchableOpacity,
   Image,
-  Alert,
   ScrollView,
   FlatList,
 } from 'react-native';
-
-import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
+import GLOBALS from '../constants/Constants';
+import styles from '../styles/List.styles'
 
 class List extends Component {
   constructor(props) {
@@ -22,7 +20,7 @@ class List extends Component {
   }
 
   componentDidMount = () => {
-    fetch('https://jsonplaceholder.typicode.com/albums', {
+    fetch(GLOBALS.ALBUM_URL, {
       method: 'GET',
     })
       .then(response => response.json())
@@ -35,9 +33,6 @@ class List extends Component {
         console.error(error);
       });
   };
-  clickEventListener(item) {
-    Alert.alert(item.title);
-  }
   render() {
     const { navigation } = this.props;
     return (
@@ -85,56 +80,3 @@ class List extends Component {
 
 export default List;
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    marginTop: 20,
-  },
-  list: {
-    paddingHorizontal: 5,
-    backgroundColor: '#E6E6E6',
-  },
-  listContainer: {
-    alignItems: 'center',
-  },
-  /******** card **************/
-  card: {
-    shadowColor: '#00000021',
-    shadowOffset: {
-      width: 0,
-      height: 6,
-    },
-    shadowOpacity: 0.37,
-    shadowRadius: 7.49,
-    elevation: 12,
-
-    marginVertical: 5,
-    backgroundColor: 'white',
-    flexBasis: '46%',
-    marginHorizontal: 5,
-  },
-  cardFooter: {
-    paddingVertical: 17,
-    paddingHorizontal: 16,
-    borderTopLeftRadius: 1,
-    borderTopRightRadius: 1,
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-
-  followButton: {
-    marginTop: 10,
-    height: 35,
-    width: 100,
-    flexDirection: 'row',
-    justifyContent: 'center',
-    alignItems: 'center',
-    borderRadius: 30,
-    backgroundColor: '#00BFFF',
-  },
-  followButtonText: {
-    color: '#FFFFFF',
-    fontSize: 20,
-  },
-});
