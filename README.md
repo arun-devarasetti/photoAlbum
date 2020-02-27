@@ -1,2 +1,28 @@
-# photoAlbum
-npm start 
+## Project Folder Structure
+   - Expo-shared
+   - __tests__
+     - App.test.js
+     - Imgview.test.js
+     - List.test.js
+     - Photos.test.js
+   - Assets
+     - icon.png
+     - splash.png
+   - Src
+     - components
+       - common
+          - Header.js
+       - Imgview.js
+       - List.js
+       - Photos.js
+     - constants
+       - Constants.js  
+     - styles
+       - Imgview.styles.js
+       - List.styles.js
+       - Photos.styles.js
+   - App.js
+   - app.json
+   - babel.config.js
+   - package-lock.json
+   - README.md
