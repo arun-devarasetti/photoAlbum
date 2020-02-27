@@ -8,9 +8,7 @@ export default StyleSheet.create({
     userImage: {
       height: 500,
       width: 500,
-      alignSelf: 'center',
-      borderColor: '#DCDCDC',
-      borderWidth: 3,
+      alignSelf: 'center'
     },
   });
   
