@@ -27,12 +27,11 @@
    - package-lock.json
    - README.md
    #### Clone & install
-   - Clone this repo 
+   - Clone this repo https://github.com/arun-devarasetti/photoAlbum.git
    - CD ProjectFolder
    - Run npm install
    - Run npm start
    #### Mobile Device
-   - Clone this repo 
    - Scan QR code from mobile or Open explore tab, Press search and Enter url shown in terminal.
    - React and Expo versions
    - React: v16.9.0
