@@ -1,5 +1,4 @@
 ## Project Folder Structure
-#### ProjectTitle
    - Expo-shared
    - __tests__
      - App.test.js
