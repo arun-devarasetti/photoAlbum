@@ -1,2 +1,1 @@
-# photoAlbum
-npm start 
+
