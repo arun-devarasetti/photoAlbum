@@ -23,7 +23,6 @@ export default StyleSheet.create({
         shadowOpacity: 0.37,
         shadowRadius: 7.49,
         elevation: 12,
-
         marginVertical: 5,
         backgroundColor: 'white',
         flexBasis: '46%',
@@ -37,4 +36,11 @@ export default StyleSheet.create({
         borderColor: '#DCDCDC',
         borderWidth: 3,
     },
+    txtStyle: {
+        width: 100
+    },
+    txtAlignmentStyle: {
+        alignItems: 'center',
+        justifyContent: 'center'
+    }
 });

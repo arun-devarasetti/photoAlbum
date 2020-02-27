@@ -21,7 +21,8 @@ class Photos extends Component {
   }
 
   componentDidMount = () => {
-    fetch(GLOBALS.PHOTOS_URL, {
+    let URL = GLOBALS.PHOTOS_URL;
+    fetch(URL, {
       method: 'GET',
     })
       .then(response => response.json())
@@ -67,9 +68,9 @@ class Photos extends Component {
                 />
                 <View style={styles.cardFooter}>
                   <View
-                    style={{ alignItems: 'center', justifyContent: 'center' }}>
+                    style={styles.txtAlignmentStyle}>
                     <Text>AlbumId: {JSON.stringify(itemId)}</Text>
-                    <Text numberOfLines={1} style={{ width: 100 }}>
+                    <Text numberOfLines={1} style={styles.txtStyle}>
                       {item.title}
                     </Text>
                   </View>

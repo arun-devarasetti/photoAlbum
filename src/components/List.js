@@ -4,7 +4,6 @@ import {
   Text,
   View,
   TouchableOpacity,
-  Image,
   FlatList,
 } from 'react-native';
 import GLOBALS from '../constants/Constants';
@@ -19,7 +18,8 @@ class List extends Component {
   }
 
   componentDidMount = () => {
-    fetch(GLOBALS.ALBUM_URL, {
+    let URL = GLOBALS.ALBUM_URL;
+    fetch(URL, {
       method: 'GET',
     })
       .then(response => response.json())
@@ -50,9 +50,9 @@ class List extends Component {
               <TouchableOpacity style={styles.card}>
                 <View style={styles.cardFooter}>
                   <View
-                    style={{ alignItems: 'center', justifyContent: 'center' }}>
+                    style={styles.txtAlignmentStyle}>
                     <Text>AlbumId: {JSON.stringify(item.id)}</Text>
-                    <Text numberOfLines={1} style={{ width: 100 }}>
+                    <Text numberOfLines={1} style={styles.txtStyle}>
                       {item.title}
                     </Text>
 
