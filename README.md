@@ -5,10 +5,10 @@
      - Imgview.test.js
      - List.test.js
      - Photos.test.js
-   - Assets
+   - assets
      - icon.png
      - splash.png
-   - Src
+   - src
      - components
        - common
           - Header.js
@@ -26,3 +26,15 @@
    - babel.config.js
    - package-lock.json
    - README.md
+   #### Clone & install
+   - Clone this repo 
+   - CD ProjectFolder
+   - Run npm install
+   - Run npm start
+   #### Mobile Device
+   - Clone this repo 
+   - Scan QR code from mobile or Open explore tab, Press search and Enter url shown in terminal.
+   - React and Expo versions
+   - React: v16.9.0
+   - Expo: v36.0.0
+   
