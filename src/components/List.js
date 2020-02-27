@@ -17,7 +17,7 @@ class List extends Component {
     };
   }
 
-  componentDidMount = () => {
+  componentDidMount(){
     let URL = GLOBALS.ALBUM_URL;
     fetch(URL, {
       method: 'GET',

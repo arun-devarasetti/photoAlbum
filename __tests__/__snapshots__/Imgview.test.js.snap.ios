@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Imageview Component Should be present 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+      "marginTop": 100,
+    }
+  }
+>
+  <Image
+    source={
+      Object {
+        "uri": undefined,
+      }
+    }
+    style={
+      Object {
+        "alignSelf": "center",
+        "height": 500,
+        "width": 500,
+      }
+    }
+  />
+</View>
+`;
+
+exports[`Imageview Component Should be receive props 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+      "marginTop": 100,
+    }
+  }
+>
+  <Image
+    source={
+      Object {
+        "uri": undefined,
+      }
+    }
+    style={
+      Object {
+        "alignSelf": "center",
+        "height": 500,
+        "width": 500,
+      }
+    }
+  />
+</View>
+`;

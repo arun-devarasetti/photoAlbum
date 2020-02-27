@@ -5,7 +5,6 @@ import { createStackNavigator } from '@react-navigation/stack';
 import List from '../List';
 import Photos from '../Photos';
 import Imgview from '../Imgview';
-
 const Stack = createStackNavigator();
 
 export default function App() {
@@ -18,7 +17,7 @@ export default function App() {
         headerTintColor: '#fff',
         headerTitleStyle: {
           fontWeight: 'bold',
-          alignItems:'center'
+          alignItems: 'center'
         },
       }}>
         <Stack.Screen name="Albums" component={List} />
