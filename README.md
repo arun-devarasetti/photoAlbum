@@ -1,3 +1,8 @@
+# React Native Photo Album App
+  This is a sample Photo Album App built with React Native to build a mobile app.
+#### Screens
+   <img src="assets/screen-1.jpeg" width="280"/> <img src="assets/screen-2.jpeg" width="280"/> <img src="assets/screen-3.jpeg" width="280"/> 
+
 #### Project Folder Structure
    - Expo-shared
    - __tests__
