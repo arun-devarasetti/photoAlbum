@@ -8,6 +8,9 @@
    - assets
      - icon.png
      - splash.png
+     - screen-1.jpeg
+     - screen-2.jpeg
+     - screen-3.jpeg
    - src
      - components
        - common
