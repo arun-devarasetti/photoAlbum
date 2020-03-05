@@ -3,9 +3,10 @@ import React from 'react';
 import List from '../src/components/List';
 import renderer from 'react-test-renderer';
 
-test('List Component Should Be Present', () => {
-  expect('<List>').toBeTruthy();
-});
+test('List Component Should be present', () => {
+  const snap = renderer.create(<List route={{ params: 'xyz' }}/>).toJSON();
+  expect(snap).toMatchSnapshot()
+})
 test('Albums response should be matched', async function () {
   const response = {
     "userId": 1,
