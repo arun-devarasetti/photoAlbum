@@ -5,7 +5,7 @@ import renderer from 'react-test-renderer';
 
 
 test('Photos Component Should be present', () => {
-  const snap = renderer.create(<Photos />).toJSON();
+  const snap = renderer.create(<Photos route={{ params: 'xyz' }} />).toJSON();
   expect(snap).toMatchSnapshot()
 })
 
