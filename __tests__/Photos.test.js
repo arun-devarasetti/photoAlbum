@@ -1,6 +1,6 @@
 import 'react-native'
 import React from 'react';
-import Photos from '../Photos';
+import Photos from '../src/components/Photos';
 import renderer from 'react-test-renderer';
 
 
